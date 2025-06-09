@@ -1,0 +1,23 @@
+.MuiListSubheader-root {
+    margin-left: 1.5em !important;
+    font-size: 2rem !important;
+}
+
+.subhead {
+    margin-left: 1.5em !important;
+    font-size: 2rem !important;
+}
+
+.resumeBox .sticky {
+    position: sticky; 
+    top: 0px;
+    z-index: 1;
+}
+
+.resumeBox .resumeItem {
+    margin-left: 5em;
+}
+
+.resumeBox .resumeItem .resumeHeadline {
+    font-size: larger;
+}

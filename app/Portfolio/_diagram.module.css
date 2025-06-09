@@ -1,0 +1,13 @@
+.DiagramBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 80%;
+}
+
+.mxgraph {
+    width: 300px;
+    border: 1px solid; 
+}

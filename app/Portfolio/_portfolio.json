@@ -1,0 +1,19 @@
+{
+    "files": [
+        {
+            "fname": "Divestiture-Shift.drawio",
+            "title": "Divestiture Decisions",
+            "desc": "In preparation for a business divestiture to create a new company, the team analyzed several corporate business applications to determine how they would support the divestiture. Options included cloning the application so that the divestiture had its own copy, using the application in place and logically segregating divestiture and company data, or not allowing the divestiture to use the application at all. This was done in concert with a 'lift and shift' of applications from on-prem hosting to a new public cloud VPC, as shown."
+        },
+        {
+            "fname": "DUT-Overview.drawio", 
+            "title": "Database Update Tool - Overview",
+            "desc": "Database Update Tool allows business users to make controlled, auditable, and validated data updates to relational databases hosted in multiple locations."
+        },
+        {
+            "fname": "AW-C4-Architecture.drawio", 
+            "title": "Accounting Warehouse - C4 Overview",
+            "desc": "The Accounting Warehouse is a data warehouse which receives and enriches financial ledger data from multiple sources across the enterprise and makes it available for reporting to corporate accountants and financial planners. (Click the diagram to see all pages.)"
+        }
+    ]
+}
