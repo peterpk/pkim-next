@@ -92,7 +92,7 @@ function Resume() {
             <Typography variant="h1" component="h1">Resume</Typography>
             <List subheader={ <li /> }>
                 <li key='section-overview'>
-                    <ListSubheader component="h2" classes={{root:styles.subhead}}>Overview</ListSubheader>
+                    <ListSubheader component="h2" classes={{root:styles.subhead, sticky:styles.stickyHead}}>Overview</ListSubheader>
                     <List>
                         <Typography variant="body1" className={styles.resumeItem}>
                             Experienced <strong>Technical Leader</strong> with 15+ years across <strong>enterprise architecture,
@@ -106,7 +106,7 @@ function Resume() {
                 </li>
                 
                 <li key='section-skills'>
-                    <ListSubheader component="h2" classes={{root:styles.subhead}}>Areas of Expertise</ListSubheader>
+                    <ListSubheader component="h2" classes={{root:styles.subhead, sticky:styles.stickyHead}}>Areas of Expertise</ListSubheader>
                     
                         { skills.map( (sk, sk_ix) => (
                             <Stack className={styles.resumeItem} key={'skills-' + sk_ix} sx={{mt: 3}}>
@@ -127,7 +127,7 @@ function Resume() {
                 </li>
 
                 <li key='section-work'>
-                    <ListSubheader component="h2" classes={{root:styles.subhead}}>Work Experience</ListSubheader>
+                    <ListSubheader component="h2" classes={{root:styles.subhead, sticky:styles.stickyHead}}>Work Experience</ListSubheader>
                     <Grid container className={styles.resumeItem} columnSpacing={4} rowSpacing={0} columns="12">
                         <Grid size={3} className={styles.resumeHeadline}>
                             <Typography variant="h5">July 2024 &mdash; March 2025</Typography>
@@ -257,7 +257,7 @@ function Resume() {
                 </li>
 
                 <li key='section-education'>
-                    <ListSubheader component="h2" classes={{root:styles.subhead}}>Education</ListSubheader>
+                    <ListSubheader component="h2" classes={{root:styles.subhead, sticky:styles.stickyHead}}>Education</ListSubheader>
                     <Grid container className={styles.resumeItem} columnSpacing={4} rowSpacing={0} columns="12">
                         <Grid size={3} className={styles.resumeHeadline}>
                             <Typography variant="h5">2005 &mdash; 2007</Typography>

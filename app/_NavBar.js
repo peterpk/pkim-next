@@ -39,7 +39,7 @@ const NavBar=()=>{
     }
 
     return (    
-        <AppBar position='static' sx={{ marginBottom: "1rem"}}>
+        <AppBar position='sticky' sx={{ marginBottom: "1rem"}}>
             <Toolbar>
                 {/* Site title large */}
                 <Typography variant="h6" component="a" href="/" noWrap
@@ -99,7 +99,6 @@ const NavBar=()=>{
                     sx={{
                         mr: 2,
                         display: { xs: 'flex', md: 'none' },
-                        fontFamily: 'Raleway',
                         fontWeight: 700,
                         letterSpacing: '.1rem',
                         color: 'inherit',
