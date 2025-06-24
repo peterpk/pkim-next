@@ -31,6 +31,13 @@ export default function Home() {
                         enterprise architect, with even a stop in management along the way! My 
                         breadth of experience helps me easily integrate into new teams and new projects quickly.                   
                     </PaddedP>
+                    <PaddedP component="p" variant="body1">
+                        More about me? I was born and raised in Connecticut, a New Englander through
+                        and through. (But don't ask me about any of the local sports-ball teams!) I 
+                        am a husband and proud father of two kids, three cats, and two hermit crabs
+                        (really!) I love stories (mostly reading, occasionally writing), solving puzzles,
+                        playing games, and traveling to new places.
+                    </PaddedP>
                     <Container sx={{paddingTop: "2em"}}>
                         <Typography component="p" variant="body2" >
                             Use the links above to check out my <Link href="/Resume">resume</Link> and
