@@ -24,7 +24,7 @@ function Resume() {
             "section": "Application & Enterprise Architecture",
             "chips": [
                 "Legacy System Modernization", 
-                "Hybrid-Cloud",
+                "Hybrid Cloud",
                 "Enterprise Security Architecture",
                 "Mainframe",
                 "SAP Technology",
@@ -53,7 +53,8 @@ function Resume() {
                 "Python and Flask",
                 "JavaScript including React.js, Node.js, Express.js",
                 "REST APIs",
-                "SQL & NoSQL Databases (e.g. MongoDB)"
+                "SQL & NoSQL Databases (e.g. MongoDB)",
+                "Java"
             ]
         },
         {
@@ -64,8 +65,9 @@ function Resume() {
                 "PL/I",
                 "REXX",
                 "Db2",
-                "VSAM",
-                "Mainframe Debugging"
+                "Mainframe DevOps",
+                "Mainframe Debugging",
+                "Mainframe Integration"
             ]
         },
         {
