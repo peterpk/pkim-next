@@ -39,7 +39,7 @@ const NavBar=()=>{
     }
 
     return (    
-        <AppBar position='static'>
+        <AppBar position='static' sx={{ marginBottom: "1rem"}}>
             <Toolbar>
                 {/* Site title large */}
                 <Typography variant="h6" component="a" href="/" noWrap

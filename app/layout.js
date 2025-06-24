@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
             <body className={`${raleway.variable}`}>
                 <AppRouterCacheProvider>
                     <ThemeProvider theme={theme}>
-                        <Box className="App">
+                        <Box className="App" sx={{ margin: "1rem", width: "98%" }}>
                             <NavBar />
 
                             {children}
