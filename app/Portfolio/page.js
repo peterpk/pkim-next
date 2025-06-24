@@ -30,11 +30,23 @@ function Portfolio() {
         }
     }, [] );
 
+    let gridSpace = {
+        "paddingTop": {
+            "xs": "1rem",
+            "md": "2rem",
+            "lg": "3rem"
+        },
+        "marginLeft": {
+            "md": "1rem",
+            "lg": "3rem"
+        }
+    };
+
     return (
         <Box>
             <Typography variant="h1" component="h1">My Portfolio</Typography>
             <Typography variant="body1" component="p">Click on any diagram to expand it and see all pages.</Typography>
-            <Grid container rowSpacing={10} columnSpacing={2} sx={{paddingTop: "3em"}}>
+            <Grid container rowSpacing={10} columnSpacing={2} sx={gridSpace}>
                 { portList["files"].map( x => (
                     <PortfolioRow key={x.fname} rowKey={x.fname} item={x} />
                 ))
