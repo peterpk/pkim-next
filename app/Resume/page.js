@@ -169,8 +169,8 @@ function Resume() {
                         <Grid size={12}>
                             <List>
                                 <ResumeListItem>
-                                    Led three application squads through IBM's divestiture, ensuring a seamless transition to Kyndryl 
-                                    Holdings, Inc., with no operational disruptions; recognized with an award from IBM's Vice President 
+                                    Led three application squads through IBM&rsquo;s divestiture, ensuring a seamless transition to Kyndryl 
+                                    Holdings, Inc., with no operational disruptions; recognized with an award from IBM&rsquo;s Vice President 
                                     for leadership and execution.
                                 </ResumeListItem>
                                 <ResumeListItem>
@@ -268,7 +268,7 @@ function Resume() {
                         <Grid size={12}>
                             <List>
                                 <ResumeListItem>
-                                    Master's of Science in Computer Science
+                                    Master&rsquo;s of Science in Computer Science
                                 </ResumeListItem>
                             </List>
                         </Grid>
@@ -282,7 +282,7 @@ function Resume() {
                         <Grid size={12}>
                             <List>
                                 <ResumeListItem>
-                                    Bachelor's of Science in Computer Science & Engineering
+                                    Bachelor&rsquo;s of Science in Computer Science & Engineering
                                 </ResumeListItem>
                             </List>
                         </Grid>

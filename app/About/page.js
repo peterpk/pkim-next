@@ -11,7 +11,7 @@ const About = () => {
                     using <Link href="https://nextjs.org" target='_blank'>Next.js</Link> and <Link href="https://mui.com/material-ui/">Material UI</Link>. 
                     Note that <strong>I am not a UI designer</strong> so it looks a little basic, but the function is there. 
                     The portfolio diagrams were created with <Link href="https://drawio.com" target="_blank">Draw.io</Link> and use 
-                    their "minimized Javascript viewer" for the lightbox display.
+                    their &ldquo;minimized Javascript viewer&rdquo; for the lightbox display.
                 </Typography>
                 <Typography component="p" variant='body1' sx={{py: '0.6rem'}}>
                     The back-end for this site is currently... well, nothing. I plan to use
@@ -28,7 +28,7 @@ const About = () => {
                 </Typography>
                 <Typography component="p" variant='body1' sx={{py: '0.6rem'}}>
                     Over time, I would like to add more complexity to this site, and feature it in my own portfolio. 
-                    But for now, it satisfies the need, and that's most important.
+                    But for now, it satisfies the need, and that&rsquo;s most important.
                 </Typography>
             </Paper>
         </>

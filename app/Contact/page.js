@@ -10,7 +10,7 @@ function ContactForm() {
                 <PaddedP variant="body1">
                     In the future, I want to have a pretty form here that you 
                     can fill out and send me a message. In the meantime, however,
-                    let's go old-school:
+                    let&rsquo;s go old-school:
                 </PaddedP>
                 <Grid container columns={10} sx={{width: "100%", mt: "2rem"}}>
                     <Grid size={{xs:10, md:2}} offset={{xs: 0, md: 1}}>

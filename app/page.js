@@ -19,7 +19,7 @@ export default function Home() {
                         Welcome to my home page!
                     </Typography>
                     <PaddedP component="p" variant="body1">
-                        I'm a Software Architect with over 15 years of experience in
+                        I&rsquo;m a Software Architect with over 15 years of experience in
                         application development, system modernization, and IT leadership. My expertise 
                         spans mainframe systems, cloud computing, SAP ERP, data warehousing, and 
                         enterprise security architecture, delivering scalable and future-proof technology 
@@ -33,7 +33,7 @@ export default function Home() {
                     </PaddedP>
                     <PaddedP component="p" variant="body1">
                         More about me? I was born and raised in Connecticut, a New Englander through
-                        and through. (But don't ask me about any of the local sports-ball teams!) I 
+                        and through. (But don&rsquo;t ask me about any of the local sports-ball teams!) I 
                         am a husband and proud father of two kids, three cats, and two hermit crabs
                         (really!) I love stories (mostly reading, occasionally writing), solving puzzles,
                         playing games, and traveling to new places.
