@@ -240,20 +240,20 @@ function GameBoard( { boardSize } ) {
                     }
                     break;
 
-                case "S":
-                case "s":
-                case "5": // num keypad
+                case 'S':
+                case 's':
+                case '5': // num keypad
                     // don't move, let daleks move
                     break;
 
-                case "H":
-                case "h":
-                case "Enter": // num keypad
+                case 'H':
+                case 'h':
+                case 'Enter': // num keypad
                     lastStand();
                     break;
 
-                case " ":
-                case "+": // num keypad
+                case ' ':
+                case '+': // num keypad
                     if(!(didSonic.current)) {
                         for(const [dx,d] of daleks.current.entries()) {
                             if( (d[0] >= tardis.current[0] - 1) && 
@@ -275,9 +275,9 @@ function GameBoard( { boardSize } ) {
                     }
                     break;
 
-                case "T":
-                case "t":
-                case "0": // num keypad
+                case 'T':
+                case 't':
+                case '0': // num keypad
                     // teleport
                     tardisNew = [Math.trunc(Math.random() * boardSize), Math.trunc(Math.random() * boardSize)]
                     break;
@@ -327,8 +327,8 @@ function GameBoard( { boardSize } ) {
         setMoveNum((moveNum) => moveNum + 1); // trigger refresh of board
 
         // set up key listener on initial render
-        document.addEventListener("keyup", doKeyPress);
-        return () => { document.removeEventListener("keyup", doKeyPress); }
+        document.addEventListener('keyup', doKeyPress);
+        return () => { document.removeEventListener('keyup', doKeyPress); }
     }, []);
 
     // generate board from given refs
@@ -378,7 +378,7 @@ function GameBoard( { boardSize } ) {
 
         const top = row * 32;
         const left = col * 32;
-        const elKey = row.toString() + "." + col.toString();
+        const elKey = row.toString() + '.' + col.toString();
 
         const sx = {
             'border': '1px solid',
@@ -391,7 +391,7 @@ function GameBoard( { boardSize } ) {
 
         return (
             <div key={elKey} style={sx} mykey={elKey}>
-                <Image src={imgName} alt='Game board piece' height="32" width="32" />
+                <Image src={imgName} alt='Game board piece' height='32' width='32' />
             </div>
         );
 
@@ -416,9 +416,9 @@ function GameBoard( { boardSize } ) {
             <Grid size={8}>
                 {
                     gameOver.current === 'L' ? 
-                        (<Typography component="h3" variant="h3" sx={{color: 'red'}}>Defeat!</Typography>) : 
+                        (<Typography component='h3' variant='h3' sx={{color: 'red'}}>Defeat!</Typography>) : 
                         (gameOver.current === 'W' ? 
-                            (<Typography component="h3" variant="h3" sx={{color: 'green'}}>&#x1F389; Victory!</Typography>) :
+                            (<Typography component='h3' variant='h3' sx={{color: 'green'}}>&#x1F389; Victory!</Typography>) :
                             ''
                         )
                 }
@@ -428,14 +428,14 @@ function GameBoard( { boardSize } ) {
                 }
 
                 <Typography component='h3' variant='h3'>Overview</Typography>
-                <Typography component='p' variant='body1' sx={{mt:"1rem"}}>
+                <Typography component='p' variant='body1' sx={{mt:'1rem'}}>
                     Move the Tardis and avoid the Daleks! Daleks will move one step closer to the Tardis 
                     on every move. Destroy Daleks by making them run into each other, creating radioactive
                     piles. (Daleks are also destroyed when they run into piles.) Destroy all the Daleks to
                     win the game!
                 </Typography>
 
-                <Typography component='h3' variant='h3' sx={{mt:"3rem"}}>Movement</Typography>
+                <Typography component='h3' variant='h3' sx={{mt:'3rem'}}>Movement</Typography>
                 <table style={{textAlign: 'center', fontFamily: 'monospace', fontSize: 'larger', paddingTop: '1rem'}}>
                     <tbody>
                         <tr>
@@ -476,7 +476,7 @@ function GameBoard( { boardSize } ) {
                     </tbody>
                 </table>
         
-                <Typography component="p" variant="body2">
+                <Typography component='p' variant='body2'>
                     Arrow keys work as well. Press <strong>S or 5</strong> to take a turn
                     by staying in the same place.
                 </Typography>
