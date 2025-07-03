@@ -2,7 +2,7 @@ import { Grid, Typography, Container, Link } from '@mui/material';
 
 import Image from 'next/image';
 
-import PaddedP from './_PaddedP';
+import PaddedP from '_PaddedP';
 
 export default function Home() {
     return (

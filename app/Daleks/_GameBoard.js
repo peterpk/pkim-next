@@ -4,6 +4,7 @@ import React, { useCallback, useState, useRef, useEffect, useReducer } from 'rea
 
 import { Box, Button, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
+import PaddedP from '@/_PaddedP';
 
 
 const NBSP = String.fromCharCode(160);
@@ -424,16 +425,16 @@ function GameBoard( { boardSize } ) {
                 }
 
                 {
-                    <Typography component='p' variant='body2' sx={{color: 'red'}}>{curMsg}</Typography>
+                    <PaddedP variant='body2' sx={{color: 'red'}}>{curMsg}</PaddedP>
                 }
 
                 <Typography component='h3' variant='h3'>Overview</Typography>
-                <Typography component='p' variant='body1' sx={{mt:'1rem'}}>
+                <PaddedP variant='body1'>
                     Move the Tardis and avoid the Daleks! Daleks will move one step closer to the Tardis 
                     on every move. Destroy Daleks by making them run into each other, creating radioactive
                     piles. (Daleks are also destroyed when they run into piles.) Destroy all the Daleks to
                     win the game!
-                </Typography>
+                </PaddedP>
 
                 <Typography component='h3' variant='h3' sx={{mt:'3rem'}}>Movement</Typography>
                 <table style={{textAlign: 'center', fontFamily: 'monospace', fontSize: 'larger', paddingTop: '1rem'}}>
@@ -476,26 +477,26 @@ function GameBoard( { boardSize } ) {
                     </tbody>
                 </table>
         
-                <Typography component='p' variant='body2'>
+                <PaddedP variant='body2'>
                     Arrow keys work as well. Press <strong>S or 5</strong> to take a turn
                     by staying in the same place.
-                </Typography>
-                <Typography component='p' variant='body1' sx={{paddingTop: '1rem'}}>
+                </PaddedP>
+                <PaddedP variant='body1'>
                     Press <strong>T or 0</strong> to teleport to a random space on the grid
                     (beware: you might teleport right on to a Dalek!)
-                </Typography>
+                </PaddedP>
 
                 <Typography component='h3' variant='h3' sx={{paddingTop: '3rem'}}>Actions</Typography>
-                <Typography component='p' variant='body1' sx={{paddingTop: '1rem'}}>
+                <PaddedP variant='body1'>
                     Press <strong>space or +</strong> to use your Sonic Screwdriver
                     to destroy all Daleks next to the Tardis. <strong>This can only be
                     done once per game!</strong>
-                </Typography>
-                <Typography component='p' variant='body1' sx={{paddingTop: '1rem'}}>
+                </PaddedP>
+                <PaddedP variant='body1'>
                     Press <strong>H or Enter</strong> to make your &ldquo;last stand&rdquo;. All Daleks 
                     will continue to come at you until they &ndash; or you! &ndash; are destroyed and
                     the game is over!
-                </Typography>
+                </PaddedP>
             </Grid>
         </Grid>
     );
