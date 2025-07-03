@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
 import React, {useState} from 'react';
 
-import Link from "next/link";
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { Box, AppBar, Toolbar, Menu, MenuItem, IconButton, Typography, Button } from '@mui/material';
@@ -17,8 +17,8 @@ const NavLink = ( { children, href }) => {
     const path = usePathname();
 
     let sx = {
-        "color": (path === href ? "var(--mui-palette-secondary-main)" : "white"), 
-        "textDecoration": "none"
+        'color': (path === href ? 'var(--mui-palette-secondary-main)' : 'white'), 
+        'textDecoration': 'none'
     };
 
     return (
@@ -39,10 +39,10 @@ const NavBar=()=>{
     }
 
     return (    
-        <AppBar position='sticky' sx={{ marginBottom: "1rem"}}>
+        <AppBar position='sticky' sx={{ marginBottom: '1rem'}}>
             <Toolbar>
                 {/* Site title large */}
-                <Typography variant="h6" component="a" href="/" noWrap
+                <Typography variant='h6' component='a' href='/' noWrap
                     sx={{
                         mr: 2,
                         display: { xs: 'none', md: 'flex' },
@@ -65,17 +65,17 @@ const NavBar=()=>{
                             sx={{ margin: 2, display: 'block' }}
                         >
                             <NavLink href={'/' + page}>{page}</NavLink>
-                            {/* <Link to={'/' + page} color="white" underline="none" style={{ textDecoration: 'none', color:"white" }}>{page}</Link> */}
+                            {/* <Link to={'/' + page} color='white' underline='none' style={{ textDecoration: 'none', color:'white' }}>{page}</Link> */}
                         </Button>
                     ))}
                 </Box>
 
                 {/* Hamburger menu for small screens */}
                 <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-                    <IconButton size="large" onClick={handleOpenNavMenu} color="inherit">
+                    <IconButton size='large' onClick={handleOpenNavMenu} color='inherit'>
                         <MenuIcon />
                     </IconButton>
-                    <Menu id="menu-appbar" anchorEl={anchorElNav}
+                    <Menu id='menu-appbar' anchorEl={anchorElNav}
                         anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
                         keepMounted
                         transformOrigin={{ vertical: 'top', horizontal: 'left' }}
@@ -88,14 +88,14 @@ const NavBar=()=>{
                         </MenuItem>
                         {pages.map((page) => (
                             <MenuItem key={page} onClick={handleCloseNavMenu}> 
-                                <Link href={'/' + page} underline="none" style={{ textAlign: 'center', textDecoration: 'none'}}>{page}</Link>
+                                <Link href={'/' + page} underline='none' style={{ textAlign: 'center', textDecoration: 'none'}}>{page}</Link>
                             </MenuItem>
                         ))}
                     </Menu>
                 </Box>
 
                 {/* Logo for small screens (after the hamburger menu) */}
-                <Typography variant="h5" component="a" href="/" noWrap
+                <Typography variant='h5' component='a' href='/' noWrap
                     sx={{
                         mr: 2,
                         display: { xs: 'flex', md: 'none' },
