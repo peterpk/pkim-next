@@ -41,6 +41,16 @@ function GameBoard( { boardSize } ) {
     const [ moveNum, setMoveNum ] = useState(-1);
     const [ curMsg, setMsg ] = useState('');
 
+    function tardisInList(list) {
+        for(const x of list) {
+            if ( (x[0] === tardis.current[0]) && (x[1] === tardis.current[1]) ) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     function makeMove() {
         // return 'W' or 'L' if it's Game Over
 
@@ -49,8 +59,7 @@ function GameBoard( { boardSize } ) {
 
         // check for dumb move (or bad teleport) by player
         // this would pre-empt any Dalek movement
-        console.log('makeMove initial check', piles.current);
-        if( (tardis.current in daleks.current) || (tardis.current in piles.current) ) {
+        if( ( tardisInList(daleks.current) ) || ( tardisInList(piles.current) ) ) {
             return 'L';
         }
         
