@@ -1,4 +1,4 @@
-import { Box, Chip, Grid, List, ListItem, ListItemIcon, ListSubheader, Stack, Typography } from "@mui/material";
+import { Box, Chip, Grid, List, ListItem, ListItemIcon, ListSubheader, Stack, Typography } from '@mui/material';
 
 import LabelImportantTwoToneIcon from '@mui/icons-material/LabelImportantTwoTone';
 
@@ -10,7 +10,7 @@ function ResumeListItem(props) {
             <ListItemIcon>
                 <LabelImportantTwoToneIcon />
             </ListItemIcon>
-            <Typography variant="body2">
+            <Typography variant='body2'>
                 {props.children}
             </Typography>
         </ListItem>
@@ -21,80 +21,80 @@ function Resume() {
 
     const skills = [
         {
-            "section": "Application & Enterprise Architecture",
-            "chips": [
-                "Legacy System Modernization", 
-                "Hybrid Cloud",
-                "Enterprise Security Architecture",
-                "Mainframe",
-                "SAP Technology",
-                "Microservices",
-                "System Integration",
-                "Data Warehousing",
-                "Solution Design"
+            'section': 'Application & Enterprise Architecture',
+            'chips': [
+                'Legacy System Modernization', 
+                'Hybrid Cloud',
+                'Enterprise Security Architecture',
+                'Mainframe',
+                'SAP Technology',
+                'Microservices',
+                'System Integration',
+                'Data Warehousing',
+                'Solution Design'
             ]
         },
         {
-            "section": "Program Management",
-            "chips": [
-                "Agile Methodologies",
-                "Scrum and Kanban", 
-                "Project Roadmapping",
-                "Stakeholder Management",
-                "Risk Assessment",
-                "Resource Allocation",
-                "Cross-Functional Collaboration",
-                "Process Optimization"
+            'section': 'Program Management',
+            'chips': [
+                'Agile Methodologies',
+                'Scrum and Kanban', 
+                'Project Roadmapping',
+                'Stakeholder Management',
+                'Risk Assessment',
+                'Resource Allocation',
+                'Cross-Functional Collaboration',
+                'Process Optimization'
             ]
         },
         {
-            "section": "Full-Stack Development",
-            "chips": [
-                "Python and Flask",
-                "JavaScript including React.js, Node.js, Express.js",
-                "REST APIs",
-                "SQL & NoSQL Databases (e.g. MongoDB)",
-                "Java"
+            'section': 'Full-Stack Development',
+            'chips': [
+                'Python and Flask',
+                'JavaScript including React.js, Node.js, Express.js',
+                'REST APIs',
+                'SQL & NoSQL Databases (e.g. MongoDB)',
+                'Java'
             ]
         },
         {
-            "section": "Mainframe Development",
-            "chips": [
-                "z/OS",
-                "JCL",
-                "PL/I",
-                "REXX",
-                "Db2",
-                "Mainframe DevOps",
-                "Mainframe Debugging",
-                "Mainframe Integration"
+            'section': 'Mainframe Development',
+            'chips': [
+                'z/OS',
+                'JCL',
+                'PL/I',
+                'REXX',
+                'Db2',
+                'Mainframe DevOps',
+                'Mainframe Debugging',
+                'Mainframe Integration'
             ]
         },
         {
-            "section": "Personnel Management",
-            "chips": [
-                "Team Leadership",
-                "Mentoring & Coaching",
-                "Performance Management",
-                "Skills Development",
-                "Conflict Resolution",
-                "Workforce Planning",
-                "Career Development",
-                "Change Management",
-                "Employee Engagement",
-                "Technical Training"
+            'section': 'Personnel Management',
+            'chips': [
+                'Team Leadership',
+                'Mentoring & Coaching',
+                'Performance Management',
+                'Skills Development',
+                'Conflict Resolution',
+                'Workforce Planning',
+                'Career Development',
+                'Change Management',
+                'Employee Engagement',
+                'Technical Training'
             ]
         }
     ];
 
     return (
         <Box className={styles.resumeBox}>
-            <Typography variant="h1" component="h1">Resume</Typography>
+            <Typography variant='h1' component='h1'>Resume</Typography>
             <List subheader={ <li /> }>
                 <li key='section-overview'>
-                    <ListSubheader component="h2" classes={{root:styles.subhead, sticky:styles.stickyHead}}>Overview</ListSubheader>
+                    <ListSubheader component='h2' classes={{root:styles.subhead, sticky:styles.stickyHead}}>Overview</ListSubheader>
                     <List>
-                        <Typography variant="body1" className={styles.resumeItem}>
+                        <Typography variant='body1' className={styles.resumeItem}>
                             Experienced <strong>Technical Leader</strong> with 15+ years across <strong>enterprise architecture,
                             application development, and team management</strong>. Skilled in various <strong>cloud platforms,
                             mainframe, Java, cloud-native microservices (JavaScript, React, Java), Python, and SAP ERP</strong>. Recognized for 
@@ -106,17 +106,17 @@ function Resume() {
                 </li>
                 
                 <li key='section-skills'>
-                    <ListSubheader component="h2" classes={{root:styles.subhead, sticky:styles.stickyHead}}>Areas of Expertise</ListSubheader>
+                    <ListSubheader component='h2' classes={{root:styles.subhead, sticky:styles.stickyHead}}>Areas of Expertise</ListSubheader>
                     
                         { skills.map( (sk, sk_ix) => (
                             <Stack className={styles.resumeItem} key={'skills-' + sk_ix} sx={{mt: 3}}>
-                                <Typography className={styles.resumeHeadline} variant="h5">{sk.section}</Typography>
+                                <Typography className={styles.resumeHeadline} variant='h5'>{sk.section}</Typography>
                                 <Box>
                                     { sk.chips.map( (ch, ch_ix) => (
-                                        <Chip size="small" variant="outlined" 
+                                        <Chip size='small' variant='outlined' 
                                             label={ch} 
-                                            key={sk_ix + "." + ch_ix} 
-                                            sx={{margin: "5px"}}
+                                            key={sk_ix + '.' + ch_ix} 
+                                            sx={{margin: '5px'}}
                                         />
                                     )
                                     )}
@@ -127,13 +127,13 @@ function Resume() {
                 </li>
 
                 <li key='section-work'>
-                    <ListSubheader component="h2" classes={{root:styles.subhead, sticky:styles.stickyHead}}>Work Experience</ListSubheader>
-                    <Grid container className={styles.resumeItem} columnSpacing={4} rowSpacing={0} columns="12">
+                    <ListSubheader component='h2' classes={{root:styles.subhead, sticky:styles.stickyHead}}>Work Experience</ListSubheader>
+                    <Grid container className={styles.resumeItem} columnSpacing={4} rowSpacing={0} columns='12'>
                         <Grid size={3} className={styles.resumeHeadline}>
-                            <Typography variant="h5">July 2024 &mdash; March 2025</Typography>
+                            <Typography variant='h5'>July 2024 &mdash; March 2025</Typography>
                         </Grid>
                         <Grid size={9} className={styles.resumeHeadline}>
-                            <Typography variant="h5"><strong>Technical Solution Architect</strong>, IBM Corp.</Typography>
+                            <Typography variant='h5'><strong>Technical Solution Architect</strong>, IBM Corp.</Typography>
                         </Grid>
                         <Grid size={12}>
                             <List>
@@ -161,10 +161,10 @@ function Resume() {
                         </Grid>
 
                         <Grid size={3} className={styles.resumeHeadline}>
-                            <Typography variant="h5">April 2021 &mdash; July 2024</Typography>
+                            <Typography variant='h5'>April 2021 &mdash; July 2024</Typography>
                         </Grid>
                         <Grid size={9} className={styles.resumeHeadline}>
-                            <Typography variant="h5"><strong>First-Line Manager</strong>, IBM Corp.</Typography>
+                            <Typography variant='h5'><strong>First-Line Manager</strong>, IBM Corp.</Typography>
                         </Grid>
                         <Grid size={12}>
                             <List>
@@ -195,10 +195,10 @@ function Resume() {
                         </Grid>
 
                         <Grid size={3} className={styles.resumeHeadline}>
-                            <Typography variant="h5">January 2006 &mdash; April 2021</Typography>
+                            <Typography variant='h5'>January 2006 &mdash; April 2021</Typography>
                         </Grid>
                         <Grid size={9} className={styles.resumeHeadline}>
-                            <Typography variant="h5"><strong>Application Architect</strong>, IBM Corp.</Typography>
+                            <Typography variant='h5'><strong>Application Architect</strong>, IBM Corp.</Typography>
                         </Grid>
                         <Grid size={12}>
                             <List>
@@ -229,10 +229,10 @@ function Resume() {
                         </Grid>
 
                         <Grid size={3} className={styles.resumeHeadline}>
-                            <Typography variant="h5">July 1997 &mdash; January 2006</Typography>
+                            <Typography variant='h5'>July 1997 &mdash; January 2006</Typography>
                         </Grid>
                         <Grid size={9} className={styles.resumeHeadline}>
-                            <Typography variant="h5"><strong>Application Developer</strong>, IBM Corp.</Typography>
+                            <Typography variant='h5'><strong>Application Developer</strong>, IBM Corp.</Typography>
                         </Grid>
                         <Grid size={12}>
                             <List>
@@ -257,13 +257,13 @@ function Resume() {
                 </li>
 
                 <li key='section-education'>
-                    <ListSubheader component="h2" classes={{root:styles.subhead, sticky:styles.stickyHead}}>Education</ListSubheader>
-                    <Grid container className={styles.resumeItem} columnSpacing={4} rowSpacing={0} columns="12">
+                    <ListSubheader component='h2' classes={{root:styles.subhead, sticky:styles.stickyHead}}>Education</ListSubheader>
+                    <Grid container className={styles.resumeItem} columnSpacing={4} rowSpacing={0} columns='12'>
                         <Grid size={3} className={styles.resumeHeadline}>
-                            <Typography variant="h5">2005 &mdash; 2007</Typography>
+                            <Typography variant='h5'>2005 &mdash; 2007</Typography>
                         </Grid>
                         <Grid size={9} className={styles.resumeHeadline}>
-                            <Typography variant="h5"><strong>Rensselaer at Work</strong>, Hartford, CT, USA</Typography>
+                            <Typography variant='h5'><strong>Rensselaer at Work</strong>, Hartford, CT, USA</Typography>
                         </Grid>
                         <Grid size={12}>
                             <List>
@@ -274,10 +274,10 @@ function Resume() {
                         </Grid>
                         
                         <Grid size={3} className={styles.resumeHeadline}>
-                            <Typography variant="h5">1993 &mdash; 1997</Typography>
+                            <Typography variant='h5'>1993 &mdash; 1997</Typography>
                         </Grid>
                         <Grid size={9} className={styles.resumeHeadline}>
-                            <Typography variant="h5"><strong>University of Connecticut</strong>, Storrs, CT, USA</Typography>
+                            <Typography variant='h5'><strong>University of Connecticut</strong>, Storrs, CT, USA</Typography>
                         </Grid>
                         <Grid size={12}>
                             <List>
