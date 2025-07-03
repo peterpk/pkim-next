@@ -2,7 +2,7 @@ import { Grid, Typography, Container, Link } from "@mui/material";
 
 import Image from 'next/image';
 
-import PaddedP from "@/app/_PaddedP";
+import PaddedP from "./_PaddedP";
 
 export default function Home() {
     return (
@@ -36,7 +36,7 @@ export default function Home() {
                         and through. (But don&rsquo;t ask me about any of the local sports-ball teams!) I 
                         am a husband and proud father of two kids, three cats, and two hermit crabs
                         (really!) I love stories (mostly reading, occasionally writing), solving puzzles,
-                        playing games, and traveling to new places.
+                        playing <Link href="/Daleks">games &#x1F916;</Link>, and traveling to new places.
                     </PaddedP>
                     <Container sx={{paddingTop: "2em"}}>
                         <Typography component="p" variant="body2" >

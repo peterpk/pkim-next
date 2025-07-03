@@ -2,7 +2,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 
 import { Raleway } from "next/font/google";
 import { ThemeProvider } from "@mui/material/styles";
-import theme from "../theme";
+import theme from "./theme";
 
 import NavBar from "./_NavBar";
 import { Box } from "@mui/material";
