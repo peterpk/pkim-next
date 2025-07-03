@@ -1,6 +1,7 @@
 import { Typography, Link, Stack, Grid, Container } from '@mui/material';
-import PaddedP from '_PaddedP';
 import { LinkedIn, Email, Phone } from '@mui/icons-material';
+
+import PaddedP from '_PaddedP';
 
 function ContactForm() {
     return (

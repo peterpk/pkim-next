@@ -1,5 +1,4 @@
 import { Box, Chip, Grid, List, ListItem, ListItemIcon, ListSubheader, Stack, Typography } from '@mui/material';
-
 import LabelImportantTwoToneIcon from '@mui/icons-material/LabelImportantTwoTone';
 
 import styles from './page.module.css';

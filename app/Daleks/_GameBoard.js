@@ -1,9 +1,11 @@
 'use client';
 
-import React, { useCallback, useState, useRef, useEffect, useReducer } from 'react';
+import React, { useCallback, useState, useRef, useEffect } from 'react';
 
 import { Box, Button, Grid, Typography } from '@mui/material';
+
 import Image from 'next/image';
+
 import PaddedP from '@/_PaddedP';
 
 

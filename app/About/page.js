@@ -1,6 +1,7 @@
-import PaddedP from '@/_PaddedP';
 import { Paper, Typography } from '@mui/material';
 import Link from 'next/link';
+
+import PaddedP from '@/_PaddedP';
 
 const About = () => {
     return (
