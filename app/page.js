@@ -1,4 +1,5 @@
 import { Grid, Typography, Container, Link } from '@mui/material';
+import { LinkedIn } from '@mui/icons-material';
 
 import Image from 'next/image';
 
@@ -38,9 +39,13 @@ export default function Home() {
                         (really!) I love stories (mostly reading, occasionally writing), solving puzzles,
                         playing <Link href='/Daleks'>games &#x1F916;</Link>, and traveling to new places.
                     </PaddedP>
-                    <Container sx={{paddingTop: '2em'}}>
-                        <Typography component='p' variant='body2' >
-                            Use the links above to check out my <Link href='/Resume'>resume</Link> and
+                    <Container sx={{paddingTop: '2rem'}}>
+                        <Typography component='p' variant='body2' sx={{textAlign: 'center'}}>
+                            Find me 
+                            on <Link href='https://www.linkedin.com/in/peter-kidwell' target='_blank'><LinkedIn /> LinkedIn</Link> !
+                        </Typography>
+                        <Typography component='p' variant='body2' sx={{textAlign: 'center', pt: '0.5rem'}}>
+                            Or use the links above to check out my <Link href='/Resume'>resume</Link> and
                             my <Link href='/Portfolio'>portfolio</Link>, or feel free
                             to <Link href='/Contact'>contact me</Link> directly!
                         </Typography>

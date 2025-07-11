@@ -24,13 +24,25 @@ function Resume() {
             'chips': [
                 'Legacy System Modernization', 
                 'Hybrid Cloud',
+                'Microservices',
                 'Enterprise Security Architecture',
                 'Mainframe',
                 'SAP Technology',
-                'Microservices',
                 'System Integration',
                 'Data Warehousing',
                 'Solution Design'
+            ]
+        },
+        {
+            'section': 'Full-Stack Development',
+            'chips': [
+                'Python and Flask',
+                'JavaScript including Node.js, React.js, Next.js',
+                'REST APIs',
+                'SQL & NoSQL Databases (e.g. MongoDB)',
+                'Kubernetes',
+                'Java',
+                'DevOps and CI/CD'
             ]
         },
         {
@@ -44,16 +56,6 @@ function Resume() {
                 'Resource Allocation',
                 'Cross-Functional Collaboration',
                 'Process Optimization'
-            ]
-        },
-        {
-            'section': 'Full-Stack Development',
-            'chips': [
-                'Python and Flask',
-                'JavaScript including React.js, Node.js, Express.js',
-                'REST APIs',
-                'SQL & NoSQL Databases (e.g. MongoDB)',
-                'Java'
             ]
         },
         {
@@ -96,10 +98,10 @@ function Resume() {
                         <Typography variant='body1' className={styles.resumeItem}>
                             Experienced <strong>Technical Leader</strong> with 15+ years across <strong>enterprise architecture,
                             application development, and team management</strong>. Skilled in various <strong>cloud platforms,
-                            mainframe, Java, cloud-native microservices (JavaScript, React, Java), Python, and SAP ERP</strong>. Recognized for 
-                            <strong>innovative solutions, system modernization, and leadership</strong>. 
-                            Proven ability to <strong>align IT strategy with business goals</strong>, optimize processes, and drive 
-                            <strong>successful outcomes</strong> in complex environments.
+                            Java, cloud-native microservices (Kubernetes, JavaScript, React, Java), Python, mainframe, and 
+                            SAP ERP</strong>. Recognized for <strong>innovative solutions, system modernization, and 
+                            leadership</strong>. Proven ability to <strong>align IT strategy with business goals</strong>, 
+                            optimize processes, and drive <strong>successful outcomes</strong> in complex environments.
                         </Typography>
                     </List>
                 </li>
@@ -150,11 +152,11 @@ function Resume() {
                                     intelligence and analytics, improving reporting accuracy and decision-making.
                                 </ResumeListItem>
                                 <ResumeListItem>
-                                    Represented IBM CIO at the Z Design Council, influencing the future direction of mainframe technology.
-                                </ResumeListItem>
-                                <ResumeListItem>
                                     Delivered a comprehensive roadmap for application sunset and replacement strategies, securing full executive 
                                     approval and successfully executing several decommissioning initiatives.
+                                </ResumeListItem>
+                                <ResumeListItem>
+                                    Represented IBM CIO at the Z Design Council, influencing the future direction of mainframe technology.
                                 </ResumeListItem>
                             </List>
                         </Grid>
@@ -168,14 +170,14 @@ function Resume() {
                         <Grid size={12}>
                             <List>
                                 <ResumeListItem>
+                                    Spearheaded the complete rewrite of a critical client-server Java application to IBM Cloud technology 
+                                    using Kubernetes, Java micro-services, MongoDB, and React.js front-end, optimizing performance and 
+                                    scalability while meeting all release deadlines.
+                                </ResumeListItem>
+                                <ResumeListItem>
                                     Led three application squads through IBM&rsquo;s divestiture, ensuring a seamless transition to Kyndryl 
                                     Holdings, Inc., with no operational disruptions; recognized with an award from IBM&rsquo;s Vice President 
                                     for leadership and execution.
-                                </ResumeListItem>
-                                <ResumeListItem>
-                                    Spearheaded the complete rewrite of a critical client-server Java application to IBM Cloud technology 
-                                    using Java micro-services, MongoDB, and React.js front-end, optimizing performance and scalability while 
-                                    meeting all release deadlines.
                                 </ResumeListItem>
                                 <ResumeListItem>
                                     Negotiated a streamlined architecture for a key financial reporting system, cutting costs by 30% while 
@@ -202,10 +204,14 @@ function Resume() {
                         <Grid size={12}>
                             <List>
                                 <ResumeListItem>
-                                    Led the architectural design for major data warehousing projects, including the successful deployment of the 
-                                    Stevie-Award-winning Balance Sheet Segmentation initiative for IBM Accounting, ensuring seamless deployment 
-                                    through an innovative &ldquo;bolt-on&rdquo; solution; recognized with a Special Equity Award and Performance 
-                                    Champion Award.
+                                    Led the development of a chatbot powered by IBM Watson AI, improving end-user support and reducing manual 
+                                    inquiry resolution time.
+                                </ResumeListItem>
+                                <ResumeListItem>
+                                    Led the architectural design for major data warehousing projects, from eliciting client requirements through
+                                    production delivery, including the successful deployment of the Stevie-Award-winning Balance Sheet Segmentation 
+                                    initiative for IBM Accounting, ensuring seamless deployment through an innovative &ldquo;bolt-on&rdquo; 
+                                    solution; recognized with a Special Equity Award and Performance Champion Award.
                                 </ResumeListItem>
                                 <ResumeListItem>
                                     Orchestrated the migration of financial applications from legacy data centers to cloud-based infrastructure, 
@@ -220,36 +226,6 @@ function Resume() {
                                     corporate security policies; authored standardized &ldquo;how-to&rdquo; manuals adopted across multiple teams, 
                                     earning the Eminence and Excellence Award.
                                 </ResumeListItem>
-                                <ResumeListItem>
-                                    Led the development of a chatbot powered by IBM Watson AI, improving end-user support and reducing manual 
-                                    inquiry resolution time.
-                                </ResumeListItem>
-                            </List>
-                        </Grid>
-
-                        <Grid size={3} className={styles.resumeHeadline}>
-                            <Typography variant='h5'>July 1997 &mdash; January 2006</Typography>
-                        </Grid>
-                        <Grid size={9} className={styles.resumeHeadline}>
-                            <Typography variant='h5'><strong>Application Developer</strong>, IBM Corp.</Typography>
-                        </Grid>
-                        <Grid size={12}>
-                            <List>
-                                <ResumeListItem>
-                                    Progressed from Junior Programmer to Database Administrator to Development Lead within IBM&rsquo;s 
-                                    mainframe data warehousing team, demonstrating strong technical expertise and leadership growth.
-                                </ResumeListItem>
-                                <ResumeListItem>
-                                    Developed and optimized mainframe data warehouse applications, improving data processing efficiency 
-                                    and reporting accuracy.
-                                </ResumeListItem>
-                                <ResumeListItem>
-                                    Led database administration efforts, enhancing system performance and ensuring data integrity across 
-                                    enterprise financial systems.
-                                </ResumeListItem>
-                                <ResumeListItem>
-                                    Managed development initiatives, mentoring junior team members and driving successful project deliveries.
-                                </ResumeListItem>
                             </List>
                         </Grid>
                     </Grid>
@@ -262,7 +238,7 @@ function Resume() {
                             <Typography variant='h5'>2005 &mdash; 2007</Typography>
                         </Grid>
                         <Grid size={9} className={styles.resumeHeadline}>
-                            <Typography variant='h5'><strong>Rensselaer at Work</strong>, Hartford, CT, USA</Typography>
+                            <Typography variant='h5'><strong>Rensselaer Polytechnic Institute</strong>, Hartford, CT, USA</Typography>
                         </Grid>
                         <Grid size={12}>
                             <List>
