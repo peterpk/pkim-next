@@ -24,7 +24,7 @@ const About = () => {
                 <PaddedP variant='body1'>
                     This site is hosted 
                     on <Link href='https://aws.amazon.com' target='_blank'>Amazon Web Services</Link> using 
-                    the <Link href='https://aws.amazon.com/s3/' target='_blank'>Amazon S3</Link> service. 
+                    the <Link href='https://aws.amazon.com/amplify/' target='_blank'>AWS Amplify</Link> service. 
                     The source code is available 
                     on <Link href='https://www.github.com/peterpk/pete-kidwell-is-me' target='_blank'>GitHub</Link>.
                 </PaddedP>
