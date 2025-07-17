@@ -20,7 +20,7 @@ export default function Home() {
                         Welcome to my home page!
                     </Typography>
                     <PaddedP component='p' variant='body1'>
-                        I&rsquo;m a Software Architect with over 15 years of experience in
+                        I&rsquo;m a Software Architect with extensive experience in
                         application development, system modernization, and IT leadership. My expertise 
                         spans mainframe systems, cloud computing, SAP ERP, data warehousing, and 
                         enterprise security architecture, delivering scalable and future-proof technology 
@@ -30,7 +30,8 @@ export default function Home() {
                         In my career I have run the gamut of software development roles, from junior
                         developer straight out of college, to lead application architect, to 
                         enterprise architect, with even a stop in management along the way! My 
-                        breadth of experience helps me easily integrate into new teams and new projects quickly.                   
+                        breadth of experience helps me easily integrate into new teams and new projects 
+                        quickly.                   
                     </PaddedP>
                     <PaddedP component='p' variant='body1'>
                         More about me? I was born and raised in Connecticut, a New Englander through
