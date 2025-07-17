@@ -96,7 +96,7 @@ function Resume() {
                     <ListSubheader component='h2' classes={{root:styles.subhead, sticky:styles.stickyHead}}>Overview</ListSubheader>
                     <List>
                         <Typography variant='body1' className={styles.resumeItem}>
-                            Experienced <strong>Technical Leader</strong> with 15+ years across <strong>enterprise architecture,
+                            Experienced <strong>technical leader</strong> with a focus on <strong>enterprise architecture,
                             application development, and team management</strong>. Skilled in various <strong>cloud platforms,
                             Java, cloud-native microservices (Kubernetes, JavaScript, React, Java), Python, mainframe, and 
                             SAP ERP</strong>. Recognized for <strong>innovative solutions, system modernization, and 
@@ -233,35 +233,16 @@ function Resume() {
 
                 <li key='section-education'>
                     <ListSubheader component='h2' classes={{root:styles.subhead, sticky:styles.stickyHead}}>Education</ListSubheader>
-                    <Grid container className={styles.resumeItem} columnSpacing={4} rowSpacing={0} columns='12'>
-                        <Grid size={3} className={styles.resumeHeadline}>
-                            <Typography variant='h5'>2005 &mdash; 2007</Typography>
-                        </Grid>
-                        <Grid size={9} className={styles.resumeHeadline}>
-                            <Typography variant='h5'><strong>Rensselaer Polytechnic Institute</strong>, Hartford, CT, USA</Typography>
-                        </Grid>
-                        <Grid size={12}>
-                            <List>
-                                <ResumeListItem>
-                                    Master&rsquo;s of Science in Computer Science
-                                </ResumeListItem>
-                            </List>
-                        </Grid>
-                        
-                        <Grid size={3} className={styles.resumeHeadline}>
-                            <Typography variant='h5'>1993 &mdash; 1997</Typography>
-                        </Grid>
-                        <Grid size={9} className={styles.resumeHeadline}>
-                            <Typography variant='h5'><strong>University of Connecticut</strong>, Storrs, CT, USA</Typography>
-                        </Grid>
-                        <Grid size={12}>
-                            <List>
-                                <ResumeListItem>
-                                    Bachelor&rsquo;s of Science in Computer Science & Engineering
-                                </ResumeListItem>
-                            </List>
-                        </Grid>
-                    </Grid>
+                    <List className={styles.resumeItem}>
+                        <ResumeListItem>
+                            <strong>Master&rsquo;s of Science</strong> in Computer Science
+                            from <strong>Rensselaer Polytechnic Institute</strong>, Hartford, CT, USA
+                        </ResumeListItem>
+                        <ResumeListItem>
+                            <strong>Bachelor&rsquo;s of Science</strong> in Computer Science & Engineering,
+                            from <strong>University of Connecticut</strong>, Storrs, CT, USA
+                        </ResumeListItem>
+                    </List>                        
                 </li>
             </List>
         </Box>
