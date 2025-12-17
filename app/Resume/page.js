@@ -40,6 +40,7 @@ function Resume() {
                 'JavaScript including Node.js, React.js, Next.js',
                 'REST APIs',
                 'SQL & NoSQL Databases (e.g. MongoDB)',
+                'Graph Databases (e.g. Neo4J)',
                 'Kubernetes',
                 'Java',
                 'DevOps and CI/CD'
@@ -130,6 +131,21 @@ function Resume() {
                 <li key='section-work'>
                     <ListSubheader component='h2' classes={{root:styles.subhead, sticky:styles.stickyHead}}>Work Experience</ListSubheader>
                     <Grid container className={styles.resumeItem} columnSpacing={4} rowSpacing={0} columns='12'>
+                        <Grid size={3} className={styles.resumeHeadline}>
+                            <Typography variant='h5'>October 2025 &mdash; present</Typography>
+                        </Grid>
+                        <Grid size={9} className={styles.resumeHeadline}>
+                            <Typography variant='h5'><strong>Data Platform Architect</strong>, Boeing</Typography>
+                        </Grid>
+                        <Grid size={12}>
+                            <List>
+                                <ResumeListItem>
+                                    Currently leading research into optimal data platform for an enterprise-wide tooling
+                                    solution supporting Boeing Commercial Aircraft.
+                                </ResumeListItem>
+                            </List>
+                        </Grid>
+
                         <Grid size={3} className={styles.resumeHeadline}>
                             <Typography variant='h5'>July 2024 &mdash; March 2025</Typography>
                         </Grid>
