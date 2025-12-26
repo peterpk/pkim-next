@@ -37,7 +37,8 @@ export default function Home() {
                         More about me? I was born and raised in Connecticut, a New Englander through
                         and through. (But don&rsquo;t ask me about any of the local sports-ball teams!) I 
                         am a husband and proud father of two kids, three cats, and two hermit crabs
-                        (really!) I love stories (mostly reading, occasionally writing), solving puzzles,
+                        (really!) I love stories (mostly reading, 
+                        occasionally <strong><Link href='/Writing'>writing</Link></strong>), solving puzzles,
                         playing <Link href='/Daleks'>games &#x1F916;</Link>, and traveling to new places.
                     </PaddedP>
                     <Container sx={{paddingTop: '2rem'}}>
