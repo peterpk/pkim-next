@@ -9,7 +9,7 @@ import { Box, AppBar, Toolbar, Menu, MenuItem, IconButton, Typography, Button } 
 import MenuIcon from '@mui/icons-material/Menu';
 
 
-const pages = ['Resume', 'Portfolio', 'Contact', 'About'];
+const pages = ['Resume', 'Portfolio', 'Writing', 'Contact', 'About'];
 
 
 
