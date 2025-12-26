@@ -19,7 +19,7 @@ function Writing() {
 
     useEffect( () => {
         var allTheStories = [];
-        _stories.map( (st) => {
+        _stories.map( (st, st_ix) => {
             fetch('_stories/' + st.filename)
             .then((response) => {
                 if(!response.ok) {
@@ -28,7 +28,7 @@ function Writing() {
                 return response.json();
             })
             .then((data) => {
-                allTheStories.push(data);
+                allTheStories.push({ix: st_ix, data: data});
             })
         } );
         setStoryData(allTheStories);
@@ -83,21 +83,21 @@ function Writing() {
                 )}    
             </List>
             {
-                storyData.map( (st, st_ix) => (
-                    <Popover key={'story-pop-' + st_ix} id={'story-pop-' + st_ix} 
+                storyData.map( (st) => (
+                    <Popover key={'story-pop-' + st.ix} id={'story-pop-' + st.ix} 
                             slotProps={{paper: {elevation: 5}}}
                             sx={{'& .MuiPopover-paper': { maxWidth: '80%', maxHeight: '80%' }}}
                             anchorReference="anchorPosition"
                             anchorPosition={{top: '100', left: '100'}} 
                             anchorOrigin={{vertical: 'top', horizontal: 'left' }}
-                            open={openStory==st_ix}  onClose={handleClose}>
+                            open={openStory==st.ix}  onClose={handleClose}>
                         <Paper sx={{bgcolor: 'wheat', padding: '10px'}}>
-                            <Typography component='h1' variant='h1'>{st.title}</Typography>
+                            <Typography component='h1' variant='h1'>{st.data.title}</Typography>
                             <Typography component='p' variant='body2' sx={{marginBottom: '10px'}}>
-                                <em>{st.comment}</em>
+                                <em>{st.data.comment}</em>
                             </Typography>
-                            {st.paras.map( (p, p_ix) => (
-                                <PaddedP key={'story-'+st_ix+'-p-'+p_ix} variant='body1'>{p}</PaddedP>
+                            {st.data.paras.map( (p, p_ix) => (
+                                <PaddedP key={'story-'+st.ix+'-p-'+p_ix} variant='body1'>{p}</PaddedP>
                             ))}
                         </Paper>
                     </Popover>
