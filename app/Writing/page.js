@@ -4,14 +4,19 @@ import { Box, Typography, Link, Popover, Paper } from '@mui/material';
 import { List, ListItem, ListItemButton, ListItemText, ListItemIcon } from '@mui/material';
 import ArticleIcon from '@mui/icons-material/Article';
 
-import PaddedP from '_PaddedP';
 import React, { useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
+
+import PaddedP from '_PaddedP';
 
 function Writing() {
 
     const _stories = [
-        {'title': 'Lie Detector Test', 'filename': 'lie-detector.json'},
-        {'title': 'Why Me?', 'filename': 'why-me.json'}
+        {'title': 'Lie Detector Test', 'filename': 'lie-detector.md'},
+        {'title': 'Why Me?', 'filename': 'why-me.md'},
+        {'title': 'The Lobsters Dance', 'filename': 'lobsters.md'},
+        {'title': 'Elixir', 'filename':'elixir.md'},
+        {'title': 'Mad', 'filename':'mad.md'}
     ];
 
     const [openStory, setOpenStory] = React.useState(null);
@@ -25,10 +30,10 @@ function Writing() {
                 if(!response.ok) {
                     throw new Error(`http error! ${response.status}`);
                 }
-                return response.json();
+                return response.text();
             })
-            .then((data) => {
-                allTheStories.push({ix: st_ix, data: data});
+            .then((tx) => {
+                allTheStories.push({ix: st_ix, text: tx});
             })
         } );
         setStoryData(allTheStories);
@@ -86,19 +91,27 @@ function Writing() {
                 storyData.map( (st) => (
                     <Popover key={'story-pop-' + st.ix} id={'story-pop-' + st.ix} 
                             slotProps={{paper: {elevation: 5}}}
-                            sx={{'& .MuiPopover-paper': { maxWidth: '80%', maxHeight: '80%' }}}
+                            sx={{'& .MuiPopover-paper': { minWidth: '80%', maxWidth: '80%', maxHeight: '80%' }}}
                             anchorReference="anchorPosition"
                             anchorPosition={{top: '100', left: '100'}} 
                             anchorOrigin={{vertical: 'top', horizontal: 'left' }}
                             open={openStory==st.ix}  onClose={handleClose}>
                         <Paper sx={{bgcolor: 'wheat', padding: '10px'}}>
-                            <Typography component='h1' variant='h1'>{st.data.title}</Typography>
-                            <Typography component='p' variant='body2' sx={{marginBottom: '10px'}}>
-                                <em>{st.data.comment}</em>
-                            </Typography>
-                            {st.data.paras.map( (p, p_ix) => (
-                                <PaddedP key={'story-'+st.ix+'-p-'+p_ix} variant='body1'>{p}</PaddedP>
-                            ))}
+                            <ReactMarkdown components={{
+                                h2(props) {
+                                    const {node, ...rest} = props;
+                                    return <Typography component='h2' variant='h2' {...rest} />
+                                },
+                                p(props) {
+                                    const {node, ...rest} = props;
+                                    return <PaddedP variant='body1' {...rest} />
+                                },
+                                blockquote(props) {
+                                    const {node, ...rest} = props;
+                                    return <blockquote style={{color: 'darkblue'}} {...rest} />
+                                }
+                            }}
+                            >{st.text}</ReactMarkdown>
                         </Paper>
                     </Popover>
                 ))
