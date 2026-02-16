@@ -3,6 +3,7 @@
 import { Box, Typography, Link, Popover, Paper } from '@mui/material';
 import { List, ListItem, ListItemButton, ListItemText, ListItemIcon } from '@mui/material';
 import ArticleIcon from '@mui/icons-material/Article';
+import StarIcon from '@mui/icons-material/Star';
 
 import React, { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
@@ -64,13 +65,28 @@ function Writing() {
                 to allow me to post theirs as well. These days, I have been submitting my work
                 to a few sites and contests, to see where my ideas might land. I have competed
                 in the <Link href="https://www.nycmidnight.com/250" target="_blank">NYC Midnight 
-                Microfiction (250 words)</Link> contest, where I got as far as 1st place in Round 
-                1 back in 2021, and in  
+                Microfiction (250 words)</Link> contest and 
                 the <Link href="https://www.bathflashfictionaward.com/" target="_blank">Bath Flash 
-                Fiction Awards</Link> (where I was, ahem, not quite as successful). I have also
-                submitted work  
+                Fiction Awards</Link>, and I have also submitted work 
                 to <Link href="https://101words.org/" target="_blank">101words.org</Link> &mdash; 
                 fingers crossed!
+            </PaddedP>
+            <PaddedP>
+                My accomplishments so far: 
+                <List>
+                    <ListItem>
+                        <ListItemIcon><StarIcon /></ListItemIcon>
+                        <strong>First place</strong>  in Round 1 of NYC Midnight Flash Fiction December 2021
+                    </ListItem>
+                    <ListItem>
+                        <ListItemIcon><StarIcon /></ListItemIcon>
+                        Seventh place in Round 1 of NYC Midnight Flash Fiction December 2025 (second round is underway!)
+                    </ListItem>
+                    <ListItem>
+                        <ListItemIcon><StarIcon /></ListItemIcon>
+                        And turned down by many fantastic contests and sites! &#x1F600;
+                    </ListItem>
+                </List>
             </PaddedP>
             <PaddedP variant='body1'>
                 If I&rsquo;ve made you curious, you can take a look at a couple of my pieces here.
