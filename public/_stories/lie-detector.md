@@ -1,6 +1,6 @@
 ## Lie Detector Test
 
-> _This story won first place in Round 1 of the December 2021 Midnight NYC Microfiction (250 words) contest. The given prompt was that it had to be a horror story, had to include the word 'wine', and had to include the act of drinking wine._
+> _This story won first place in Round 1 of the December 2021 Midnight NYC Microfiction (250 words) contest. The given prompt was that it had to be a horror story, had to include the word 'wine', and had to include the act of taking a lie detector test._
  
 Finally home from work, rough day. Lots of those, lately. I&rsquo;m looking forward to my glass of wine.
 
