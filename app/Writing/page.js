@@ -17,7 +17,8 @@ function Writing() {
         {'title': 'Why Me?', 'filename': 'why-me.md'},
         {'title': 'The Lobsters Dance', 'filename': 'lobsters.md'},
         {'title': 'Elixir', 'filename':'elixir.md'},
-        {'title': 'Mad', 'filename':'mad.md'}
+        {'title': 'Mad', 'filename':'mad.md'},
+        {'title': 'Rook-4', 'filename': 'rook-4.md'}
     ];
 
     const [openStory, setOpenStory] = React.useState(null);
@@ -53,44 +54,28 @@ function Writing() {
         <Box sx={{'my': '2rem'}}>
             <Typography sx={{'marginY':'1rem'}} component='h1' variant='h1'>Microfiction</Typography>
             <PaddedP variant='body1'>
-                I love to write. In my <a href="/Resume">day job</a>, I am the odd person who actually 
-                enjoys writing documentation. But in my free time, I have taken up writing <em>microfiction</em>.
-                Microfiction is, essentially, writing an <strong>extremely</strong> short story, usually 
-                under 300 words in total. I love the craft of it: there is such a limited space in which to 
-                tell a full story arc, so every single word counts. 
+                I love to write. In my <a href="/Resume">day job</a>, I am the odd person who actually enjoys writing documentation. But in my free time, I have taken up writing <em>microfiction</em> and <em>flash fiction</em>. Microfiction is, essentially, writing an <strong>extremely</strong> short story, usually under 300 words in total. Flash fiction gives the author a bit more room, usually around 1,000 words. I love the craft of it: there is such a limited space in which to tell a full story arc, so every single word counts. 
             </PaddedP>
             <PaddedP variant='body1'>
-                A very long time ago, when the World Wide Web was nothing more than a cobweb, I
-                hosted a site where I published my own fiction, and even got a few brave souls
-                to allow me to post theirs as well. These days, I have been submitting my work
-                to a few sites and contests, to see where my ideas might land. I have competed
-                in the <Link href="https://www.nycmidnight.com/250" target="_blank">NYC Midnight 
-                Microfiction (250 words)</Link> contest and 
-                the <Link href="https://www.bathflashfictionaward.com/" target="_blank">Bath Flash 
-                Fiction Awards</Link>, and I have also submitted work 
-                to <Link href="https://101words.org/" target="_blank">101words.org</Link> &mdash; 
-                fingers crossed!
+                A very long time ago, when the World Wide Web was nothing more than a cobweb, I hosted a site where I published my own fiction, and even got a few brave souls to allow me to post theirs as well. These days, I have been submitting my work to a few sites and contests, to see where my ideas might land. I have competed in the <Link href="https://www.nycmidnight.com/250" target="_blank">NYC Midnight Microfiction (250 words)</Link> contest and the <Link href="https://www.bathflashfictionaward.com/" target="_blank">Bath Flash Fiction Awards</Link>, and I have also submitted work to <Link href="https://101words.org/" target="_blank">101words.org</Link> and <Link href="https://www.flashfictiononline.com/">Flash Fiction Online</Link> &mdash; fingers crossed!
             </PaddedP>
-            <PaddedP>
-                My accomplishments so far: 
-                <List>
-                    <ListItem>
-                        <ListItemIcon><StarIcon /></ListItemIcon>
-                        <strong>First place</strong>  in Round 1 of NYC Midnight Flash Fiction December 2021
-                    </ListItem>
-                    <ListItem>
-                        <ListItemIcon><StarIcon /></ListItemIcon>
-                        Seventh place in Round 1 of NYC Midnight Flash Fiction December 2025 (second round is underway!)
-                    </ListItem>
-                    <ListItem>
-                        <ListItemIcon><StarIcon /></ListItemIcon>
-                        And turned down by many fantastic contests and sites! &#x1F600;
-                    </ListItem>
-                </List>
-            </PaddedP>
+            <PaddedP>My accomplishments so far:</PaddedP>
+            <List>
+                <ListItem>
+                    <ListItemIcon><StarIcon /></ListItemIcon>
+                    <ListItemText><strong>First place</strong> in Round 1 of NYC Midnight Flash Fiction December 2021</ListItemText>
+                </ListItem>
+                <ListItem>
+                    <ListItemIcon><StarIcon /></ListItemIcon>
+                    <ListItemText>Seventh place in Round 1 of NYC Midnight Flash Fiction December 2025 (second round is underway!)</ListItemText>
+                </ListItem>
+                <ListItem>
+                    <ListItemIcon><StarIcon /></ListItemIcon>
+                    <ListItemText>And turned down by many fantastic contests and sites! &#x1F600;</ListItemText>
+                </ListItem>
+            </List>
             <PaddedP variant='body1'>
-                If I&rsquo;ve made you curious, you can take a look at a couple of my pieces here.
-                (I&rsquo;ll add more over time!)
+                If I&rsquo;ve made you curious, you can take a look at a couple of my pieces here. (I&rsquo;ll add more over time!)
             </PaddedP>
             <List>
                 {_stories.map( (st, st_ix) => (
