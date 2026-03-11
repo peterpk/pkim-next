@@ -18,7 +18,7 @@ function ContactForm() {
                         <Stack alignItems='center' direction='row' gap={2}>
                             <Email /> 
                             <Typography variant='body1' component='span'>
-                                <Link href='mailto:peterkidwell@gmail.com'>PeterKidwell@gmail.com</Link>
+                                <Link href='mailto:&quot;Pete Kidwell&quot;<Pete@Pete-Kidwell.me>?Subject=Contact Me'>Pete@Pete-Kidwell.me</Link>
                             </Typography>
                         </Stack>
                     </Grid>
@@ -30,14 +30,14 @@ function ContactForm() {
                             </Link>
                         </Stack>
                     </Grid>
-                    <Grid size={{xs:10, md:2}} offset={{xs: 0, md: 1}}>
+                    {/*<Grid size={{xs:10, md:2}} offset={{xs: 0, md: 1}}>
                         <Stack alignItems='center' direction='row' gap={2}>
                             <Phone /> 
                             <Link href='tel:+1-860-329-3548' target='_blank'>
                                 <Typography variant='body1' component='span'>+1-860-329-3548</Typography>
                             </Link>
                         </Stack>
-                    </Grid>
+                    </Grid> */}
                     <Grid size={1}>&nbsp;</Grid>
                 </Grid>
             </Container>
