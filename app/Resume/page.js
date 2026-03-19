@@ -36,7 +36,7 @@ function Resume() {
         {
             'section': 'Full-Stack Development',
             'chips': [
-                'Python and Flask',
+                'Python',
                 'JavaScript including Node.js, React.js, Next.js',
                 'REST APIs',
                 'SQL & NoSQL Databases (e.g. MongoDB)',
