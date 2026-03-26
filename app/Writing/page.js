@@ -67,7 +67,9 @@ function Writing() {
                 </ListItem>
                 <ListItem>
                     <ListItemIcon><StarIcon /></ListItemIcon>
-                    <ListItemText>Seventh place in Round 1 of NYC Midnight Flash Fiction December 2025 (second round is underway!)</ListItemText>
+                    <ListItemText>
+                        Seventh place in Round 1 of NYC Midnight Flash Fiction December 2025, and Fourth place in Round 2!
+                    </ListItemText>
                 </ListItem>
                 <ListItem>
                     <ListItemIcon><StarIcon /></ListItemIcon>
